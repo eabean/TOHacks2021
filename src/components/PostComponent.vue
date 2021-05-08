@@ -6,10 +6,11 @@
         {{ error }}
       </p>
       <div class="post">
+        <button @click="created()">Get Posts</button>
         <div v-for="post in posts"
              v-bind:item="post"
              v-bind:key="post.id">
-          <p> {{ post }} </p>
+          <p> {{ post}} </p>
         </div>
       </div>
   </div>
@@ -30,8 +31,10 @@ export default {
   async created() {
     try{
       this.posts = await AxiosService.getPosts();
+      console.log(this.posts);
     } catch (e) {
       this.error = e.message;
+      console.log(this.error);
     }
   }
   }

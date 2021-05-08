@@ -1,0 +1,6 @@
+Idea for Components and sections of UI
+> Header
+> Web page:
+  * User Info: Asks user to imput covid info and maybe analyzes if they should travel or not if there's proof of symptoms in the info they'd inputted
+  * Traveling Info: User inputs where they are travelling to and data is retreived based on this. 
+  * Dislayed Info: 

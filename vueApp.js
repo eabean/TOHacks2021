@@ -1,6 +1,6 @@
 // const url = "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH&tsyms=USD,EUR";
 const url = "https://sandbox.travelperk.com/travelsafe/restrictions?destination=ES&destination_type=country_code&origin=DE&origin_type=country_code&date=2020-10-15";
-const apiKey = "P24Vcr.zoJEeSBPBJ23Cj4Bq3d4gkUPDUfMEJC8";
+const apiKey = APIKEY;
 
 const vm = new Vue({
     el: '#app',

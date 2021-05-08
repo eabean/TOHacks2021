@@ -1,9 +1,13 @@
 Idea for Components and sections of UI
 > Header
 > Nav Bar:
-  * Home Page: Here, maybe a page that contains covid info and generic things that people should know like weaing masks during flights or requirements for traveling
+  * Home Page: Here, maybe a page that contains covid-19 info, guidelines and generic things that people should know like weaing masks during flights or requirements for traveling
   * Web App Page
 > Web App page:
   * User Info: Asks user to imput covid info and maybe analyzes if they should travel or not if there's proof of symptoms in the info they'd inputted
   * Traveling Info: User inputs where they are travelling to and data is retreived based on this. 
   * Dislayed Info: 
+     * Travelling restrictions in travel destinations
+     * Local Summary
+     * number of COVID cases in said destination. Maybe compares the number to a accepted covid-19 case number limit and can suggest to user if it's advisable to travel to destination at this time
+

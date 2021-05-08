@@ -69,4 +69,9 @@ div.post {
   padding: 10px 10px 30px 10px;
   margin-bottom: 15px;
 }
+p.text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
 </style>

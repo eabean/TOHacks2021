@@ -3,8 +3,18 @@
      <img alt="Vue logo" src="./assets/logo.png">
     <PostComponent />
     <BaseInput 
-      v-model="info.country"
+      v-model="searchInput.country"
       label="Country"
+      type="text"
+    />
+    <BaseInput 
+      v-model="searchInput.city"
+      label="City"
+      type="text"
+    />
+    <BaseInput 
+      v-model="searchInput.airport_name"
+      label="Airport Name"
       type="text"
     />
   </div>
@@ -31,8 +41,14 @@ export default {
         'CAN',
         'KUL'
       ],
-      info: {
+      searchInput: {
         country: "",
+        city: "",
+        airport_name: "",
+        latitude: "",
+        longitude: ""
+      },
+      information: {
         travel_advisories: "",
         advisory_details: "",
         covid_stats: "",

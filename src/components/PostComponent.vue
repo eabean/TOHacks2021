@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <h1>Data from POST</h1>
+      <h1>Data from GET</h1>
       <hr>
       <p class="error" v-if="error">
         {{ error }}

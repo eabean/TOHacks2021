@@ -1,13 +1,13 @@
 <template>
-    <div id='check'>
+    
       <input
           type="checkbox"
           :checked="modelValue"
           @change="$emit('update:modelValue', $event.target.checked)"
           class="field"
         />
-        <label>{{ label }}</label><br>
-    </div>
+        <label>{{ label }}</label>
+   
 </template>
 
 <script>

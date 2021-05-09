@@ -15,6 +15,7 @@
       <p class="text-center" v-if="error">
         {{ error }}
       </p>
+      <a href="https://www.world-airport-codes.com/world-top-30-airports.html">Airplane codes</a>
       <div class="columns medium-3" v-for="(result, index) in posts" v-bind:key="result.id">
         <div class="card">
           <div class="card-divider">

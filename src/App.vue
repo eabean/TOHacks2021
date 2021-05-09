@@ -1,7 +1,7 @@
 <template>
   <div>
      <img alt="Vue logo" src="./assets/logo.png">
-    <PostComponent />
+    <PostComponent :iata="searchInput.iata" />
     <!-- <BaseInput 
       v-model="searchInput.country"
       label="Country"

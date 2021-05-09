@@ -10,7 +10,7 @@
       </p>
       <h3 class="text-center">COVID-19 Travel Statistics</h3>
       <br />
-      <button class="fetch" @click="created()">Fetch Airport Info</button>
+      <button class="fetch" @click="created(iata)">Fetch Airport Info</button>
       <br /><br />
       <p class="text-center" v-if="error">
         {{ error }}
@@ -37,18 +37,22 @@ export default {
     return {
       posts: [],
       error: '',
-      iata: ''
-
     }
   },
   methods:{
-  async created() {
+  async created(iata) {
     try{
-      this.posts = await AxiosService.getPosts();
+      this.posts = await AxiosService.getPosts(iata);
     } catch (e) {
       this.error = e.message;
     }
   }
+  },
+  props: {
+    iata: {
+        type: String,
+        required: true
+    }
   }
 }
 </script>

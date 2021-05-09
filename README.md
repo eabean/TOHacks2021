@@ -10,7 +10,11 @@ Travelling during these pandemic times have become highly restricted and extreme
 * HTML
 
 # Project Setup
+
+Github branch where project is located: branchoff3
+
 npm install > npm run serve > localhost link
+
 
 # Contributors
 

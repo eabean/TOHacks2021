@@ -1,5 +1,5 @@
  <template>
- <label v-if="label">{{ label }}</label>
+ <label v-if="label">{{ label }}</label><br>
       <select
         :value="modelValue"
         class="field"
@@ -16,7 +16,8 @@
         >{{ option }}</option>
       </select>
       <br>
-      <button @click="created()">GET Data</button>
+      
+      
 </template>
 
 <script>
@@ -47,14 +48,5 @@ export default {
   border-radius: 4px;
   box-sizing: border-box;
  }
- button {
-  width: 10%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+
 </style>

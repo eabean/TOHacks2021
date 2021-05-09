@@ -1,4 +1,5 @@
 <template>
+<div id="check">
       <input
           type="checkbox"
           :checked="modelValue"
@@ -6,9 +7,12 @@
           class="field"
         />
         <label>{{ label }}</label>
+</div>
+   
 </template>
 
 <script>
+
 export default {
     props: {
         label: {
@@ -19,6 +23,14 @@ export default {
             type: Boolean,
             default: true
         }
-    },
+    }
 }
 </script>
+
+<style scoped>
+
+#check {
+    
+    padding-top: 20px;
+}
+</style>

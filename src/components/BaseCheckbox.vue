@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="check">
       <input
           type="checkbox"
           :checked="modelValue"
@@ -28,8 +28,9 @@ export default {
 </script>
 
 <style scoped>
-input[type="checkbox"]{
-    padding-left: 50px;
-    padding-top: 100px;
+
+#check {
+    
+    padding-top: 20px;
 }
 </style>

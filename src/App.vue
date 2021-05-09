@@ -2,7 +2,7 @@
   <div>
      <img alt="Vue logo" src="./assets/logo.png">
     <PostComponent />
-    <BaseInput 
+    <!-- <BaseInput 
       v-model="searchInput.country"
       label="Country"
       type="text"
@@ -12,15 +12,16 @@
       label="City"
       type="text"
     />
-    <BaseInput 
-      v-model="searchInput.airport_name"
-      label="Airport Name"
-      type="text"
-    />
     <BaseSelect 
       :options="airport"
       v-model="airport"
       label="Select an airport"
+    /> 
+    -->
+   <BaseInput 
+      v-model="searchInput.iata"
+      label="Airport IATA code"
+      type="text"
     />
     <BaseCheckbox 
       v-model="information.travel_advisories"
@@ -36,7 +37,7 @@
 <script>
 import PostComponent from './components/PostComponent.vue'
 import BaseInput from './components/BaseInput.vue'
-import BaseSelect from './components/BaseSelect.vue'
+// import BaseSelect from './components/BaseSelect.vue'
 import BaseCheckbox from './components/BaseCheckbox.vue'
 
 export default {
@@ -44,7 +45,7 @@ export default {
   components: {
     PostComponent,
     BaseInput,
-    BaseSelect,
+    // BaseSelect,
     BaseCheckbox
     
   },
@@ -60,6 +61,7 @@ export default {
         'KUL'
       ],
       searchInput: {
+        iata: "",
         country: "",
         city: "",
         airport_name: "",

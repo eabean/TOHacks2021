@@ -5,7 +5,7 @@
       <p class="error" v-if="error">
         {{ error }}
       </p>
-
+      <Button @click="created()">GET Info</Button>
       <div class="post">
         <div v-for="post in posts"
              v-bind:item="post"

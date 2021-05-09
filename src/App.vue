@@ -1,43 +1,42 @@
-
-  
 <template>
   <div>
-     <img alt="Vue logo" src="./assets/logo.png">
+     <img alt="Vue logo" src="./assets/plane.png">
     <PostComponent :iata="searchInput.iata" />
-    <!-- <BaseInput 
+    <!-- <BaseInput
       v-model="searchInput.country"
       label="Country"
       type="text"
     />
-    <BaseInput 
+    <BaseInput
       v-model="searchInput.city"
       label="City"
       type="text"
     />
-    <BaseSelect 
+    <BaseSelect
       :options="airport"
       v-model="airport"
       label="Select an airport"
-    /> 
+    />
     -->
-   <BaseInput 
+   <BaseInput
       v-model="searchInput.iata"
-      label="Airport IATA code"
+      label="Airport IATA code (ex. BOS)"
       type="text"
     />
-    <BaseCheckbox 
+    <a href="https://www.world-airport-codes.com/world-top-30-airports.html">Airplane codes</a>
+    <BaseCheckbox
       v-model="information.travel_advisories"
       label="Travel Advisories"
       />
-    <BaseCheckbox 
+    <BaseCheckbox
       v-model="information.advisory_details"
       label="Advisory Details"
       />
-    <BaseCheckbox 
+    <BaseCheckbox
       v-model="information.covid_stats"
       label="COVID stats"
       />
-    <BaseCheckbox 
+    <BaseCheckbox
       v-model="information.covid_info"
       label="COVID info"
       />
@@ -56,7 +55,6 @@ export default {
     BaseInput,
     // BaseSelect,
     BaseCheckbox
-    
   },
   data() {
     return {
@@ -99,6 +97,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+img{
+  width: 150px;
+}
+
 </style>

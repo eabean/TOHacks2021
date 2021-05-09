@@ -8,7 +8,6 @@
         />
         <label>{{ label }}</label>
 </div>
-   
 </template>
 
 <script>
@@ -28,9 +27,7 @@ export default {
 </script>
 
 <style scoped>
-
 #check {
-    
     padding-top: 20px;
 }
 </style>

@@ -42,7 +42,7 @@ export default {
   methods:{
   async created(iata) {
     try{
-      if (iata === "" || iata.length !== 3) {
+      if (iata === "") {
         throw new Error("Please enter in a valid IATA code.");
       }
       this.posts = await AxiosService.getPosts(iata);

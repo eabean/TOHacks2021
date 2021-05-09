@@ -18,7 +18,7 @@ npm install > npm run serve > localhost link
 
 # Contributors
 * tiangela1027
-* odotado
+* odotadot
 * shaeyi-lu
 
 # Demo Link

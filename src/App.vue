@@ -23,7 +23,7 @@
       label="Airport IATA code (ex. BOS)"
       type="text"
     />
-    <a href="https://www.world-airport-codes.com/world-top-30-airports.html">Airplane codes</a>
+    <a href="https://www.world-airport-codes.com/world-top-30-airports.html">Airplane codes</a><br>
     <BaseCheckbox
       v-model="information.travel_advisories"
       label="Travel Advisories"
@@ -101,5 +101,6 @@ export default {
 img{
   width: 150px;
 }
+
 
 </style>

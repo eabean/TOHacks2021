@@ -17,8 +17,8 @@
       </p>
       <a href="https://www.world-airport-codes.com/world-top-30-airports.html">Airplane codes</a>
       <div class="columns medium-3" v-for="(result, index) in posts" v-bind:key="result.id">
-        <div class="card">
-          <div class="card-divider">
+        <div  v-if="posts.length !== 3" class="card">
+          <div  v-if="posts.length !== 3" class="card-divider">
             <p> {{ index }} </p>
           </div>
           <div class="card-section" v-for="(value, key) in result" v-bind:key="value.id">
@@ -42,6 +42,9 @@ export default {
   methods:{
   async created(iata) {
     try{
+      if (iata === "" || iata.length !== 3) {
+        throw new Error("Please enter in a valid IATA code.");
+      }
       this.posts = await AxiosService.getPosts(iata);
     } catch (e) {
       this.error = e.message;

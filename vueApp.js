@@ -1,9 +1,11 @@
+import axios from 'axios';
+
 const url = "https://covid-api.thinklumo.com/data?airport=BOS";
 const apiKey = APIKEY;
 
 const vm = new Vue({
     el: '#app',
-    data: {
+    data() {
         results: [],
         error: ""
     },

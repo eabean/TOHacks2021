@@ -17,18 +17,25 @@
       label="Airport Name"
       type="text"
     />
+    <BaseSelect 
+      :options="airport"
+      v-model="airport"
+      label="Select an airport"
+    />
   </div>
 </template>
 
 <script>
 import PostComponent from './components/PostComponent.vue'
 import BaseInput from './components/BaseInput.vue'
+import BaseSelect from './components/BaseSelect.vue'
 
 export default {
   name: 'App',
   components: {
     PostComponent,
-    BaseInput
+    BaseInput,
+    BaseSelect
   },
   data() {
     return {

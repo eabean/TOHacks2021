@@ -29,7 +29,15 @@
       />
     <BaseCheckbox 
       v-model="information.advisory_details"
-      label="Advisories Details"
+      label="Advisory Details"
+      />
+    <BaseCheckbox 
+      v-model="information.covid_stats"
+      label="COVID stats"
+      />
+    <BaseCheckbox 
+      v-model="information.covid_info"
+      label="COVID info"
       />
   </div>
 </template>

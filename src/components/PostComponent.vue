@@ -5,7 +5,7 @@
       <p class="error" v-if="error">
         {{ error }}
       </p>
-      <button @click="created()">GET Data</button>
+
       <div class="post">
         <div v-for="post in posts"
              v-bind:item="post"
@@ -13,6 +13,7 @@
           <p> {{ post }} </p>
         </div>
       </div>
+    
   </div>
 </template>
 
@@ -76,6 +77,8 @@ p.text {
   font-weight: 700;
   margin-bottom: 0;
 }
+
+
 /* .container {
   border: 1px solid #000000;
 } */

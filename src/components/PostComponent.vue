@@ -5,7 +5,7 @@
       <p class="error" v-if="error">
         {{ error }}
       </p>
-      <Button @click="created()">GET Info</Button>
+      <Button @click="created(this.iata)">GET Info</Button>
       <div class="post">
         <div v-for="post in posts"
              v-bind:item="post"
@@ -26,13 +26,14 @@ export default {
     return {
       posts: [],
       error: '',
+      iata: ''
       
     }
   },
   methods:{
-  async created() {
+  async created(iata) {
     try{
-      this.posts = await AxiosService.getPosts();
+      this.posts = await AxiosService.getPosts(iata);
     } catch (e) {
       this.error = e.message;
     }

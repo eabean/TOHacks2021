@@ -1,7 +1,12 @@
 <template>
   <div>
      <img alt="Vue logo" src="./assets/logo.png">
-    <PostComponent />
+    <BaseInput 
+      v-model="searchInput.iata"
+      label="Airport IATA code"
+      type="text"
+    />
+    <PostComponent :iata="this.searchInput.iata"/>
     <!-- <BaseInput 
       v-model="searchInput.country"
       label="Country"
@@ -18,11 +23,6 @@
       label="Select an airport"
     /> 
     -->
-   <BaseInput 
-      v-model="searchInput.iata"
-      label="Airport IATA code"
-      type="text"
-    />
     <BaseCheckbox 
       v-model="information.travel_advisories"
       label="Travel Advisories"

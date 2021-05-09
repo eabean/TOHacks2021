@@ -2,16 +2,48 @@
   <div>
      <img alt="Vue logo" src="./assets/logo.png">
     <PostComponent />
+    <BaseInput 
+      v-model="info.country"
+      label="Country"
+      type="text"
+    />
   </div>
 </template>
 
 <script>
 import PostComponent from './components/PostComponent.vue'
+import BaseInput from './components/BaseInput.vue'
 
 export default {
   name: 'App',
   components: {
-    PostComponent
+    PostComponent,
+    BaseInput
+  },
+  data() {
+    return {
+      airport: [
+        'YYZ',
+        'BOS',
+        'ATL',
+        'ORD',
+        'ICN',
+        'CAN',
+        'KUL'
+      ],
+      info: {
+        country: "",
+        travel_advisories: "",
+        advisory_details: "",
+        covid_stats: "",
+        covid_info: "",
+        extras: {
+          qurantine: "",
+          testing: ""
+        }
+      }
+      
+    }
   }
 }
 </script>

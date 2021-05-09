@@ -22,6 +22,14 @@
       v-model="airport"
       label="Select an airport"
     />
+    <BaseCheckbox 
+      v-model="information.travel_advisories"
+      label="Travel Advisories"
+      />
+    <BaseCheckbox 
+      v-model="information.advisory_details"
+      label="Advisories Details"
+      />
   </div>
 </template>
 
@@ -29,13 +37,16 @@
 import PostComponent from './components/PostComponent.vue'
 import BaseInput from './components/BaseInput.vue'
 import BaseSelect from './components/BaseSelect.vue'
+import BaseCheckbox from './components/BaseCheckbox.vue'
 
 export default {
   name: 'App',
   components: {
     PostComponent,
     BaseInput,
-    BaseSelect
+    BaseSelect,
+    BaseCheckbox
+    
   },
   data() {
     return {
@@ -65,7 +76,6 @@ export default {
           testing: ""
         }
       }
-      
     }
   }
 }

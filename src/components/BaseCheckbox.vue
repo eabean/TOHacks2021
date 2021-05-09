@@ -6,7 +6,8 @@
           @change="$emit('update:modelValue', $event.target.checked)"
           class="field"
         />
-        <label>{{ label }}</label>
+        <label>{{ label }}</label><br>
+         <button @click="created()">GET Data</button> 
     </div>
 
    

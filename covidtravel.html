@@ -14,14 +14,11 @@
       </p>
       <div class="columns medium-4" v-for="(result, index) in results">
         <div class="card">
-          <div class="card-section">
+          <div class="card-divider">
             <p> {{ index }} </p>
           </div>
-          <div class="card-divider">
-            <p>$ {{ result.summary }}</p>
-          </div>
-          <div class="card-section">
-            <p> &#8364 {{ result.details }}</p>
+          <div class="card-section" v-for="(value, key) in result">
+            <p>{{ key }}: {{ value }}</p>
           </div>
         </div>
       </div>

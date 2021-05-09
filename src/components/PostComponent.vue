@@ -8,12 +8,6 @@
       <p class="error" v-if="error">
         {{ error }}
       </p>
-      <Button @click="created(this.iata)">GET Info</Button>
-      <div class="post">
-        <div v-for="post in posts"
-             v-bind:item="post"
-             v-bind:key="post.id">
-          <p> {{ post }} </p>
       <h3 class="text-center">COVID-19 Travel Statistics</h3>
       <br />
       <button class="fetch" @click="created()">Fetch Airport Info</button>
@@ -44,12 +38,13 @@ export default {
       posts: [],
       error: '',
       iata: ''
+
     }
   },
   methods:{
-  async created(iata) {
+  async created() {
     try{
-      this.posts = await AxiosService.getPosts(iata);
+      this.posts = await AxiosService.getPosts();
     } catch (e) {
       this.error = e.message;
     }

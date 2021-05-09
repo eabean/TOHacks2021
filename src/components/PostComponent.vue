@@ -5,7 +5,7 @@
       <p class="error" v-if="error">
         {{ error }}
       </p>
-
+      <a href="https://www.world-airport-codes.com/world-top-30-airports.html">Airplane codes</a>
       <div class="post">*
         <div v-for="post in posts"
              v-bind:item="post"

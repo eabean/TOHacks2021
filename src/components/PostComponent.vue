@@ -30,7 +30,6 @@
 
 <script>
 import AxiosService from '../AxiosService'
-
 export default {
   name: 'PostComponent',
   data() {
@@ -73,14 +72,12 @@ li {
 a {
   color: #42b983;
 }
-
 p.error {
   border: 1px solid #ff5b5f;
   background-color: #ffc5c1;
   padding:  10px;
   margin-bottom: 15px;
 }
-
 div.post {
   position: relative;
   border: 1px solid #5bd658;
@@ -93,7 +90,6 @@ p.text {
   font-weight: 700;
   margin-bottom: 0;
 }
-
 button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -107,18 +103,15 @@ button {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
 .fetch {
   background-color: white;
   color: black;
   border: 2px solid #4CAF50;
 }
-
 button:hover {
   background-color: #4CAF50; /* Green */
   color: white;
 }
-
 /* .container {
   border: 1px solid #000000;
 } */

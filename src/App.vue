@@ -1,3 +1,4 @@
+  
 <template>
   <div>
      <img alt="Vue logo" src="./assets/logo.png">
@@ -47,7 +48,6 @@ import PostComponent from './components/PostComponent.vue'
 import BaseInput from './components/BaseInput.vue'
 // import BaseSelect from './components/BaseSelect.vue'
 import BaseCheckbox from './components/BaseCheckbox.vue'
-
 export default {
   name: 'App',
   components: {

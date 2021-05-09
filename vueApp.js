@@ -1,13 +1,17 @@
+/* eslint-disable no-undef */
 import axios from 'axios';
 
 const url = "https://covid-api.thinklumo.com/data?airport=BOS";
-const apiKey = APIKEY;
+const apiKey = '6c67fce8744e4d87871da46b4e8ebb9a';
 
+// eslint-disable-next-line no-unused-vars
 const vm = new Vue({
     el: '#app',
     data() {
-        results: [],
-        error: ""
+        return {
+            results: [],
+            error: ""
+         } 
     },
     mounted() {
         try {
@@ -27,7 +31,8 @@ const vm = new Vue({
             }).then((res) => {
                 this.results = res.data
             }).catch(e => {
-                this.error = e;
+                console.log(e);
+                this.error = e.message;
             });
         } catch (e) {
             this.error = "Could not render";

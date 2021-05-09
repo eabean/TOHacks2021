@@ -13,7 +13,8 @@
           <p> {{ post }} </p>
         </div>
       </div>
-    
+
+    <button @click="created()">GET Data</button>
   </div>
 </template>
 
@@ -26,7 +27,6 @@ export default {
     return {
       posts: [],
       error: '',
-      
     }
   },
   methods:{
@@ -78,6 +78,16 @@ p.text {
   margin-bottom: 0;
 }
 
+button {
+  width: 10%;
+  background-color:#00ab8e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 /* .container {
   border: 1px solid #000000;

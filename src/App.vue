@@ -7,6 +7,8 @@
       type="text"
     />
     <PostComponent :iata="this.searchInput.iata"/>
+    <h1>FLIGHT-19</h1>
+
     <!-- <BaseInput 
       v-model="searchInput.country"
       label="Country"
@@ -23,6 +25,12 @@
       label="Select an airport"
     /> 
     -->
+    <br />
+   <BaseInput 
+      v-model="searchInput.iata"
+      label="Airport IATA code"
+      type="text"
+    />
     <BaseCheckbox 
       v-model="information.travel_advisories"
       label="Travel Advisories"
@@ -40,6 +48,7 @@
       label="COVID info"
       />
   </div>
+  <PostComponent />
 </template>
 
 <script>

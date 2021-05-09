@@ -1,6 +1,6 @@
 <template>
   <div>
-     <img alt="Vue logo" src="./assets/logo.png">
+     <img alt="Vue logo" src="./assets/plane.png">
     <PostComponent />
     <BaseInput 
       v-model="searchInput.country"
@@ -80,4 +80,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+img{
+  width: 100px;
+}
+
 </style>

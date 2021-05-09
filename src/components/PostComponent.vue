@@ -6,7 +6,7 @@
         {{ error }}
       </p>
 
-      <div class="post">
+      <div class="post">*
         <div v-for="post in posts"
              v-bind:item="post"
              v-bind:key="post.id">
